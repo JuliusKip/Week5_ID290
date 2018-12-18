@@ -1,0 +1,116 @@
+body{
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+.forecast-card {
+  width: 90%;
+  height: 400px;
+  box-shadow: 2px 2px 2px #e0e0e0;
+  border-radius: 15px;
+  font-family: Montserrat;
+  margin: 0 auto;
+  font-family: "Merriweather", sans-serif;
+  border: 1px solid #e0e0e0;
+}
+.forecast-info-container {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-radius: 15px;
+}
+.forecast-info-container-inner {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+}
+.forecast-search-container {
+  position: relative;
+  height: 10%;
+}
+.forecast-card p {
+  color: white;
+}
+.forecast-card .temp {
+  font-size: 100px;
+}
+.forecast-card .description {
+  font-size: 50px;
+}
+.forecast-card .city {
+  font-size: 25px;
+}
+.forecast-card .temp,
+.forecast-card .description,
+.forecast-card .city {
+  margin: 0;
+}
+.forecast-card .search {
+  border: 5px solid white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.forecast-card .search svg {
+  top: 14px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: 0 auto;
+}
+.forecast-card .search:hover svg {
+  top: 14px;
+  right: 10px;
+  left: auto;
+  position: absolute;
+  margin: 0 auto;
+}
+.forecast-card .search:hover {
+  -webkit-transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39),
+    border-radius 0.6s, background 0.3s;
+  transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s,
+    background 0.6s;
+  outline: none;
+  box-shadow: none;
+  padding-left: 15px;
+  cursor: text;
+  width: 60%;
+  border-radius: auto;
+  background: #ebebeb;
+  color: black;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+.forecast-card input {
+  border: 0;
+  height: 100%;
+  width: 85%;
+  background: transparent;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  float: left;
+  visibility: hidden;
+}
+.forecast-card .search:hover input{
+  visibility: visible;
+}
+.forecast-card input:focus {
+  outline-width: 0;
+}
+.forecast-card input::placeholder {
+  color: #616161;
+  font-size: 20px;
+}
